@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pedido</title>
+    <link rel="Stylesheet" href="./styles.css">
+</head>
+<body>
+    <section>
+    <img class="logo1" src="./Galaxy Cakes.png" alt="logo">
+    </section>
+    <hr><br>
+
+    <h2 class="titulo1">Selecciona tu pastel</h2><br>
+
+    <input type="radio" id="Galaxy" name="Pastel" value="Galaxy">
+    <label for="Galaxy">Galaxy</label><br>
+    <input type="radio" id="Comet" name="Pastel" value="Comet">
+    <label for="Comet">Comet</label><br>
+    <input type="radio" id="Super Nova" name="Pastel" value="Super Nova">
+    <label for="Super Nova">Super Nova</label><br><br>
+
+    <hr><br>
+
+    <h2 class="titulo1">Selecciona tus ingredientes</h2><br>
+    <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+    <label for="topping1">Chocolate</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+    <label for="topping2">Fresa</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Vainilla">
+    <label for="topping3">Vainilla</label><br><br>
+
+    <hr><br>
+
+    <h2 class="titulo1">Selecciona tus adornos</h2><br>
+    <input type="checkbox" id="adorno1" name="adorno1" value="Astronauta">
+    <label for="adorno1">Astronauta</label><br>
+    <input type="checkbox" id="adorno2" name="adorno2" value="Luna">
+    <label for="adorno2">Luna</label><br>
+    <input type="checkbox" id="adorno3" name="adorno3" value="Sol">
+    <label for="adorno3">Sol</label><br><br>
+
+    <hr><br>
+
+    <h2 class="titulo1">Datos de contacto</h2>
+    <form action="#" id="form1" method="post">
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="numero1">Teléfono</label><br>
+        <input type="number" id="numero1" name="numero1"><br><br>
+        <label for="correo1">Correo Electrónico</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        <label for="descripción">Descripción de tu pastel</label><br>
+        <input type="text" id="descripción" name="descripción"><br><br>
+        <input type="submit" value="Submit" onclick="alert('Gracias por tu pedido');">
+        <input type="reset">
+        <button> <a href="./GalaxyCakes.html">Regresar</a></button><br>
+    </form>
+    
+</body>
+</html>
