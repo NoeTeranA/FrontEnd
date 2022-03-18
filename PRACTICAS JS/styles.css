@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(70, 70, 70);
+    display: block;
+}
+
+.contenedorPokedex{
+    position: relative;
+    text-align: center;
+}
+
+.bkgPokedex{
+    position: relative;
+    width: 1200px;
+    height: fit-content;
+}
+
+.pantalla{
+    position: absolute;
+    left: 149px;
+    top: 256px;
+    border: solid black;
+    height: 250px;
+    width: 375px;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.pokemon{
+    position: relative;
+    top: 25px;
+    width: 180px;
+    right: 90px;
+    
+}
+.nombre{
+    margin: 10px;
+    font-size: 50px;
+}

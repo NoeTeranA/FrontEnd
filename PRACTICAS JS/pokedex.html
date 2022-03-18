@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex LaunchX</title>
-    <link rel="stylesheet" href="./pokedex.css">
-    
+    <link rel="stylesheet" href="./styles.css">
+
 </head>
 <body>
-    <h1>Pokedex LaunchX</h1>
-    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName"><br>
-    <img src="./pokeball.png" alt="Pokemon" id="pokeImg" width="150px" height=""><br>
-    <button onclick="fetchPokemon()">Cambiar Imágen</button>
+    <h1 style="text-align: center; color: red;">Pokedex LaunchX</h1>
+    <div class="contenedorPokedex">
+        <div class="pantalla">
+            <img class="pokemon" src="./Assets/pokeball.png" alt="Pokemon" id="pokeImg">  
+        </div>
+        <img class="bkgPokedex" src="./Assets/pokedex.png" alt="fondoPokedex">
+    </div>
+    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+    <button onclick="fetchPokemon()">Cambiar Imágen</button><br>
+    <p id="nombrePokemon" class="nombre"></p><br>
+    <br>
+    <div class="attacks">
+        <p id="ataque1">asdasd</p>
+        <p id="ataque2">asdasdasd</p>
+        <p id="ataque3">asdasdasd</p>
+        <p id="ataque4">asdasdad</p>
+    </div>
+    
 </body>
 <footer>
     <script src="./pokedex.js"></script>
