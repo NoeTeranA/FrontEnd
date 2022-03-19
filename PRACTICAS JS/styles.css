@@ -1,6 +1,19 @@
 @font-face {
     font-family: arcade;
     src: url(./Fonts/ARCADECLASSIC.TTF);
+    font-family: pokemon;
+    src: url(./Fonts/pokemon/Pokemon\ Solid.ttf);
+
+}
+
+h1{
+    position: relative;
+    font-family: pokemon;
+    font-size: 80px;
+    color: yellow;
+    background-color: blue;
+    margin: 0px;
+
 }
 
 body{
