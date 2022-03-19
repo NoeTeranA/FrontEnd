@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex LaunchX</title>
     <link rel="stylesheet" href="./styles.css">
+    
 
 </head>
 <body>
@@ -23,21 +24,21 @@
                 </div>
             </div>
             <div class="contenedorStats">
-                <p class="stats" id="statsPokemon">
-                    <p id="stats1">asdasd</p>
+                <div class="stats" id="statsPokemon">
+                    <p id="stats1"><p>
                     <p id="stats2"></p>
                     <p id="stats3"></p>
                     <p id="stats4"></p>
                     <p id="stats5"></p>
                     <p id="stats6"></p>
-                </p>
+                </div>
             </div>
         </div>
         <div class="contenedorBuscar">
-            <input style="color: white; text-align: center;" class="buscar" type="text" placeholder="Ingresa el nombre o # de Pokemon" id="pokeName" name="pokeName">
+            <input style="color: white; text-align: center;" class="buscar" type="text" placeholder="Ingresa el nombre ó # de Pokemon" id="pokeName" name="pokeName">
         </div>
         <div class="contenedorBoton">
-            <button class="boton" onclick="fetchPokemon()">Buscar Pokemon</button>
+            <button id="buscarEnter" class="boton" onclick="fetchPokemon()">Buscar Pokemon</button>
         </div>
         <img class="bkgPokedex" src="./Assets/pokedex.png" alt="fondoPokedex">
     </div> 
