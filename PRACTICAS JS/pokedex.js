@@ -18,10 +18,16 @@ const fetchPokemon = () => {
             pokeImage(pokeImg);
             let pokeNombre = datos.name;
             nombrePokemon(pokeNombre.toUpperCase())
+            let pokeNumero = `# ${datos.id}`;
+            numeroPokemon(pokeNumero)
+            let pokeTipo = `  Type: ${datos.types[0].type.name}`;
+            tipoPokemon(pokeTipo.toUpperCase())
             console.log(pokeImg);
+            
         }
     });
 }
+
 
 //Esto sirve para mandar los datos del api a los ids del html
 
@@ -33,5 +39,16 @@ const nombrePokemon = (pokeapi) => {
     const nombre = document.getElementById("nombrePokemon");
     nombre.innerText = pokeapi;
 }
+const numeroPokemon = (pokeapi) => {
+    const numero = document.getElementById("numeroPokemon");
+    numero.innerText = pokeapi;
+}
+const tipoPokemon = (pokeapi) => {
+    const tipo = document.getElementById("tipoPokemon");
+    tipo.innerText = pokeapi;
+}
+
+
+
 
 

@@ -1,7 +1,8 @@
 body{
-    background-color: rgb(70, 70, 70);
+    background-image: url(Assets/Fondo_pokemon.jpg);
     display: block;
 }
+
 
 .contenedorPokedex{
     position: relative;
@@ -16,7 +17,7 @@ body{
 
 .pantalla{
     position: absolute;
-    left: 149px;
+    left: 155px;
     top: 256px;
     border: solid black;
     height: 250px;
@@ -27,12 +28,86 @@ body{
 
 .pokemon{
     position: relative;
-    top: 25px;
+    top: 0px;
     width: 180px;
     right: 90px;
     
 }
 .nombre{
-    margin: 10px;
-    font-size: 50px;
+    font-size: 20px;
+    width: 50%;
+    justify-items: center;
+}
+
+div .numeroTipo{
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+div .contenedorStats{
+    position: absolute;
+    top: 40px;
+    left: 205px;
+    font-size: 15px;
+}
+div .contenedorBuscar{
+    position: absolute;
+    z-index: 1;
+    left: 758px;
+    top: 283px;
+    
+}
+
+.buscar{
+    width: 370px;
+    height: 128px;
+    border-radius: 4%;
+    background-color: rgb(5, 47, 5);
+    font-size: 22px;
+    border: solid black;
+    outline: auto;
+}
+
+
+
+::placeholder{
+    color: white;
+    text-align: center;
+    opacity: 30%;
+}
+
+.stats{
+    position: inherit;
+    list-style: none;
+    width: 150px;
+    height: 200px;
+    text-align: left;
+    padding: 5px;    
+}
+
+div .contenedorBoton{
+    position: absolute;
+    z-index: 1;
+    left: 968px;
+    top: 720px;
+}
+
+.boton{
+    width: 170px;
+    height: 60px;
+    border-radius: 7%;
+    background-color: rgb(5, 47, 5);
+    font-size: 15px;
+    border: solid white;
+}
+
+button{
+    color: white;
+    
 }

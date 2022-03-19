@@ -9,24 +9,38 @@
 
 </head>
 <body>
-    <h1 style="text-align: center; color: red;">Pokedex LaunchX</h1>
+    <!-- <h1 style="text-align: center; color: red;">Pokedex LaunchX</h1> -->
     <div class="contenedorPokedex">
         <div class="pantalla">
-            <img class="pokemon" src="./Assets/pokeball.png" alt="Pokemon" id="pokeImg">  
+            <p id="nombrePokemon" class="nombre"></p>
+            <img class="pokemon" src="./Assets/pokeball.png" alt="Pokemon" id="pokeImg">
+            <div class="numeroTipo">
+                <div class="contenedorNumero">
+                    <p id="numeroPokemon" class="nuemro"></p>
+                </div>
+                <div class="contenedorTipo">
+                    <p id="tipoPokemon" class="tipo"></p>  
+                </div>
+            </div>
+            <div class="contenedorStats">
+                <p class="stats" id="statsPokemon">
+                    <p id="stats1">asdasd</p>
+                    <p id="stats2"></p>
+                    <p id="stats3"></p>
+                    <p id="stats4"></p>
+                    <p id="stats5"></p>
+                    <p id="stats6"></p>
+                </p>
+            </div>
+        </div>
+        <div class="contenedorBuscar">
+            <input style="color: white; text-align: center;" class="buscar" type="text" placeholder="Ingresa el nombre o # de Pokemon" id="pokeName" name="pokeName">
+        </div>
+        <div class="contenedorBoton">
+            <button class="boton" onclick="fetchPokemon()">Buscar Pokemon</button>
         </div>
         <img class="bkgPokedex" src="./Assets/pokedex.png" alt="fondoPokedex">
-    </div>
-    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
-    <button onclick="fetchPokemon()">Cambiar Imágen</button><br>
-    <p id="nombrePokemon" class="nombre"></p><br>
-    <br>
-    <div class="attacks">
-        <p id="ataque1">asdasd</p>
-        <p id="ataque2">asdasdasd</p>
-        <p id="ataque3">asdasdasd</p>
-        <p id="ataque4">asdasdad</p>
-    </div>
-    
+    </div> 
 </body>
 <footer>
     <script src="./pokedex.js"></script>
